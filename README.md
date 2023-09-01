@@ -2,6 +2,13 @@
 
 Enables AWS Config and adds managed config rules with good defaults.
 
+This is a RocketReach fork of the https://github.com/trussworks/terraform-aws-config repository that provides AWS Config
+infrastructure for our main production account, which we've configured to capture the config changes in all our other
+accounts.
+
+We branched this in 2023/09 because the original module didn't support excluding Config resource_types and when we tried
+to include a specific set of resource_types, that didn't work either.
+
 ## Supported AWS Config Rules
 
 ### ACM
